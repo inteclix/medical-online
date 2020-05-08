@@ -1,0 +1,301 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Web</Name>
+    <RootNamespace>Web</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f4a78c1e-a9bb-481a-ac46-c6a1ac3cb0fb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".editorconfig" />
+    <Content Include=".env.example" />
+    <Content Include=".gitignore" />
+    <Content Include=".prettierignore" />
+    <Content Include=".prettierrc" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="jsconfig.json" />
+    <Content Include="LICENSE.md" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="src\App.js" />
+    <Content Include="src\assets\scss\index.scss" />
+    <Content Include="src\components\form-dialog.js" />
+    <Content Include="src\components\Form.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\components\index.js" />
+    <Content Include="src\components\material-table.js" />
+    <Content Include="src\components\RouteWithLayout\index.js" />
+    <Content Include="src\components\RouteWithLayout\PrivateRouteWithLayout.js" />
+    <Content Include="src\components\RouteWithLayout\RouteWithLayout.js" />
+    <Content Include="src\components\SearchInput\index.js" />
+    <Content Include="src\components\SearchInput\SearchInput.js" />
+    <Content Include="src\components\StatusBullet\index.js" />
+    <Content Include="src\components\StatusBullet\StatusBullet.js" />
+    <Content Include="src\components\table.js" />
+    <Content Include="src\components\UserList\components\index.js" />
+    <Content Include="src\components\UserList\components\UsersTable\index.js" />
+    <Content Include="src\components\UserList\components\UsersTable\UsersTable.js" />
+    <Content Include="src\components\UserList\components\UsersToolbar\index.js" />
+    <Content Include="src\components\UserList\components\UsersToolbar\UsersToolbar.js" />
+    <Content Include="src\components\UserList\data.js" />
+    <Content Include="src\components\UserList\index.js" />
+    <Content Include="src\components\UserList\UserList.js" />
+    <Content Include="src\contexts\app-context.js" />
+    <Content Include="src\helpers\chartjs.js" />
+    <Content Include="src\helpers\getInitials.js" />
+    <Content Include="src\helpers\index.js" />
+    <Content Include="src\hooks\use-api.js" />
+    <Content Include="src\icons\Facebook\index.js" />
+    <Content Include="src\icons\Google\index.js" />
+    <Content Include="src\icons\index.js" />
+    <Content Include="src\layouts\index.js" />
+    <Content Include="src\layouts\LayoutWithBack.js" />
+    <Content Include="src\layouts\Main\components\Footer\Footer.js" />
+    <Content Include="src\layouts\Main\components\Footer\index.js" />
+    <Content Include="src\layouts\Main\components\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\Profile\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\Profile\Profile.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\SidebarNav\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\SidebarNav\SidebarNav.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\UpgradePlan\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\components\UpgradePlan\UpgradePlan.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\index.js" />
+    <Content Include="src\layouts\Main\components\Sidebar\Sidebar.js" />
+    <Content Include="src\layouts\Main\components\Topbar\index.js" />
+    <Content Include="src\layouts\Main\components\Topbar\Topbar.js" />
+    <Content Include="src\layouts\Main\index.js" />
+    <Content Include="src\layouts\Main\Main.js" />
+    <Content Include="src\layouts\Minimal\components\index.js" />
+    <Content Include="src\layouts\Minimal\components\Topbar\index.js" />
+    <Content Include="src\layouts\Minimal\components\Topbar\Topbar.js" />
+    <Content Include="src\layouts\Minimal\index.js" />
+    <Content Include="src\layouts\Minimal\Minimal.js" />
+    <Content Include="src\lib\material-icons.css" />
+    <Content Include="src\lib\material-icons.woff2" />
+    <Content Include="src\Routes.js" />
+    <Content Include="src\serviceWorker.js" />
+    <Content Include="src\Test.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\theme\index.js" />
+    <Content Include="src\theme\overrides\index.js" />
+    <Content Include="src\theme\overrides\MuiButton.js" />
+    <Content Include="src\theme\overrides\MuiIconButton.js" />
+    <Content Include="src\theme\overrides\MuiPaper.js" />
+    <Content Include="src\theme\overrides\MuiTableCell.js" />
+    <Content Include="src\theme\overrides\MuiTableHead.js" />
+    <Content Include="src\theme\overrides\MuiTableRow.js" />
+    <Content Include="src\theme\overrides\MuiTypography.js" />
+    <Content Include="src\theme\palette.js" />
+    <Content Include="src\theme\typography.js" />
+    <Content Include="src\views\Account\Account.js" />
+    <Content Include="src\views\Account\components\AccountDetails\AccountDetails.js" />
+    <Content Include="src\views\Account\components\AccountDetails\index.js" />
+    <Content Include="src\views\Account\components\AccountProfile\AccountProfile.js" />
+    <Content Include="src\views\Account\components\AccountProfile\index.js" />
+    <Content Include="src\views\Account\components\index.js" />
+    <Content Include="src\views\Account\index.js" />
+    <Content Include="src\views\Appointments\Add.js" />
+    <Content Include="src\views\Appointments\index.js" />
+    <Content Include="src\views\Appointments\List.js" />
+    <Content Include="src\views\Consultations\Add.js" />
+    <Content Include="src\views\Consultations\Edit.js" />
+    <Content Include="src\views\Consultations\index.js" />
+    <Content Include="src\views\Consultations\List.js" />
+    <Content Include="src\views\Dashboard\components\Budget\Budget.js" />
+    <Content Include="src\views\Dashboard\components\Budget\index.js" />
+    <Content Include="src\views\Dashboard\components\index.js" />
+    <Content Include="src\views\Dashboard\components\LatestOrders\data.js" />
+    <Content Include="src\views\Dashboard\components\LatestOrders\index.js" />
+    <Content Include="src\views\Dashboard\components\LatestOrders\LatestOrders.js" />
+    <Content Include="src\views\Dashboard\components\LatestProducts\data.js" />
+    <Content Include="src\views\Dashboard\components\LatestProducts\index.js" />
+    <Content Include="src\views\Dashboard\components\LatestProducts\LatestProducts.js" />
+    <Content Include="src\views\Dashboard\components\LatestSales\chart.js" />
+    <Content Include="src\views\Dashboard\components\LatestSales\index.js" />
+    <Content Include="src\views\Dashboard\components\LatestSales\LatestSales.js" />
+    <Content Include="src\views\Dashboard\components\TasksProgress\index.js" />
+    <Content Include="src\views\Dashboard\components\TasksProgress\TasksProgress.js" />
+    <Content Include="src\views\Dashboard\components\TotalProfit\index.js" />
+    <Content Include="src\views\Dashboard\components\TotalProfit\TotalProfit.js" />
+    <Content Include="src\views\Dashboard\components\TotalUsers\index.js" />
+    <Content Include="src\views\Dashboard\components\TotalUsers\TotalUsers.js" />
+    <Content Include="src\views\Dashboard\components\UsersByDevice\index.js" />
+    <Content Include="src\views\Dashboard\components\UsersByDevice\UsersByDevice.js" />
+    <Content Include="src\views\Dashboard\Dashboard.js" />
+    <Content Include="src\views\Dashboard\index.js" />
+    <Content Include="src\views\Icons\Icons.js" />
+    <Content Include="src\views\Icons\index.js" />
+    <Content Include="src\views\index.js" />
+    <Content Include="src\views\NotFound\index.js" />
+    <Content Include="src\views\NotFound\NotFound.js" />
+    <Content Include="src\views\Patients\Add.js" />
+    <Content Include="src\views\Patients\components\Table.js" />
+    <Content Include="src\views\Patients\components\Toolbar.js" />
+    <Content Include="src\views\Patients\Edit.js" />
+    <Content Include="src\views\Patients\index.js" />
+    <Content Include="src\views\Patients\List.js" />
+    <Content Include="src\views\Patients\PatientsList.js" />
+    <Content Include="src\views\ProductList\components\index.js" />
+    <Content Include="src\views\ProductList\components\ProductCard\index.js" />
+    <Content Include="src\views\ProductList\components\ProductCard\ProductCard.js" />
+    <Content Include="src\views\ProductList\components\ProductsToolbar\index.js" />
+    <Content Include="src\views\ProductList\components\ProductsToolbar\ProductsToolbar.js" />
+    <Content Include="src\views\ProductList\data.js" />
+    <Content Include="src\views\ProductList\index.js" />
+    <Content Include="src\views\ProductList\ProductList.js" />
+    <Content Include="src\views\Settings\components\index.js" />
+    <Content Include="src\views\Settings\components\Notifications\index.js" />
+    <Content Include="src\views\Settings\components\Notifications\Notifications.js" />
+    <Content Include="src\views\Settings\components\Password\index.js" />
+    <Content Include="src\views\Settings\components\Password\Password.js" />
+    <Content Include="src\views\Settings\index.js" />
+    <Content Include="src\views\Settings\Settings.js" />
+    <Content Include="src\views\SignIn\index.js" />
+    <Content Include="src\views\SignIn\SignIn.js" />
+    <Content Include="src\views\SignUp\index.js" />
+    <Content Include="src\views\SignUp\SignUp.js" />
+    <Content Include="src\views\Typography\index.js" />
+    <Content Include="src\views\Typography\Typography.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\scss\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\RouteWithLayout\" />
+    <Folder Include="src\components\SearchInput\" />
+    <Folder Include="src\components\StatusBullet\" />
+    <Folder Include="src\components\UserList\" />
+    <Folder Include="src\components\UserList\components\" />
+    <Folder Include="src\components\UserList\components\UsersTable\" />
+    <Folder Include="src\components\UserList\components\UsersToolbar\" />
+    <Folder Include="src\contexts\" />
+    <Folder Include="src\helpers\" />
+    <Folder Include="src\hooks\" />
+    <Folder Include="src\icons\" />
+    <Folder Include="src\icons\Facebook\" />
+    <Folder Include="src\icons\Google\" />
+    <Folder Include="src\layouts\" />
+    <Folder Include="src\layouts\Main\" />
+    <Folder Include="src\layouts\Main\components\" />
+    <Folder Include="src\layouts\Main\components\Footer\" />
+    <Folder Include="src\layouts\Main\components\Sidebar\" />
+    <Folder Include="src\layouts\Main\components\Sidebar\components\" />
+    <Folder Include="src\layouts\Main\components\Sidebar\components\Profile\" />
+    <Folder Include="src\layouts\Main\components\Sidebar\components\SidebarNav\" />
+    <Folder Include="src\layouts\Main\components\Sidebar\components\UpgradePlan\" />
+    <Folder Include="src\layouts\Main\components\Topbar\" />
+    <Folder Include="src\layouts\Minimal\" />
+    <Folder Include="src\layouts\Minimal\components\" />
+    <Folder Include="src\layouts\Minimal\components\Topbar\" />
+    <Folder Include="src\lib\" />
+    <Folder Include="src\theme\" />
+    <Folder Include="src\theme\overrides\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\views\Account\" />
+    <Folder Include="src\views\Account\components\" />
+    <Folder Include="src\views\Account\components\AccountDetails\" />
+    <Folder Include="src\views\Account\components\AccountProfile\" />
+    <Folder Include="src\views\Appointments\" />
+    <Folder Include="src\views\Consultations\" />
+    <Folder Include="src\views\Dashboard\" />
+    <Folder Include="src\views\Dashboard\components\" />
+    <Folder Include="src\views\Dashboard\components\Budget\" />
+    <Folder Include="src\views\Dashboard\components\LatestOrders\" />
+    <Folder Include="src\views\Dashboard\components\LatestProducts\" />
+    <Folder Include="src\views\Dashboard\components\LatestSales\" />
+    <Folder Include="src\views\Dashboard\components\TasksProgress\" />
+    <Folder Include="src\views\Dashboard\components\TotalProfit\" />
+    <Folder Include="src\views\Dashboard\components\TotalUsers\" />
+    <Folder Include="src\views\Dashboard\components\UsersByDevice\" />
+    <Folder Include="src\views\Icons\" />
+    <Folder Include="src\views\NotFound\" />
+    <Folder Include="src\views\Patients\" />
+    <Folder Include="src\views\Patients\components\" />
+    <Folder Include="src\views\ProductList\" />
+    <Folder Include="src\views\ProductList\components\" />
+    <Folder Include="src\views\ProductList\components\ProductCard\" />
+    <Folder Include="src\views\ProductList\components\ProductsToolbar\" />
+    <Folder Include="src\views\Settings\" />
+    <Folder Include="src\views\Settings\components\" />
+    <Folder Include="src\views\Settings\components\Notifications\" />
+    <Folder Include="src\views\Settings\components\Password\" />
+    <Folder Include="src\views\SignIn\" />
+    <Folder Include="src\views\SignUp\" />
+    <Folder Include="src\views\Typography\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\i18n.js" />
+    <Content Include="src\index.js" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      npm run build
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
